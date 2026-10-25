@@ -1,6 +1,6 @@
 //! MOS 6532 RIOT (RAM-I/O-Timer).
 //!
-//! Adapted from `Emu198x-Oldest/crates/mos-riot-6532` (port 2026-06-01)
+//! Adapted from `Emu198x-Oldest/crates/emu198x-mos-riot-6532` (port 2026-06-01)
 //! as a foundation for Atari 2600 and 7800. Self-contained, no external
 //! dependencies.
 //!
@@ -183,7 +183,7 @@ impl Riot6532 {
             // free-running side-channel state independent of the
             // CPU read).
             //
-            // Donor `mos-riot-6532` reset `post_underflow` and the
+            // Donor `emu198x-mos-riot-6532` reset `post_underflow` and the
             // prescaler here, which broke the Atari 2600 "poll
             // INTIM in a tight loop until it expires" idiom (Combat
             // and many others). Removing those resets is the
